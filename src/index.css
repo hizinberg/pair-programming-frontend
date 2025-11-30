@@ -1,0 +1,25 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Allow responsive media elements */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 4. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 5. Root stacking context */
+#root {
+  isolation: isolate;
+}
